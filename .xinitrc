@@ -10,6 +10,7 @@ export AWT_TOOLKIT=MToolkit
 wmname LG3D
 
 #APPS
+nm-applet &
 
 #STATUS_BAR
 
