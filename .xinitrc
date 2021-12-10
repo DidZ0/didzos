@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #KEYMAP
-setxkbmap us colemak &
+setxkbmap us intl &
 xset r rate 300 50 &
 
 #JAVA APPS ISSUES
