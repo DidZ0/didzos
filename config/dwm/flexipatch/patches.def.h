@@ -150,10 +150,20 @@
 /* The systray patch adds systray for the status bar.
  * https://dwm.suckless.org/patches/systray/
  */
-#define BAR_SYSTRAY_PATCH 1 
+#define BAR_SYSTRAY_PATCH 0
 
-/* Show tag symbols in bar */
+/* Show tag symbols in the bar. */
 #define BAR_TAGS_PATCH 1
+
+/* Show tag symbols + class of master window in the bar.
+ * https://dwm.suckless.org/patches/taglabels/
+ */
+#define BAR_TAGLABELS_PATCH 0
+
+/* This patch underlines the selected tag, or optionally all tags.
+ * https://dwm.suckless.org/patches/underlinetags/
+ */
+#define BAR_UNDERLINETAGS_PATCH 0
 
 /* This patch adds the window icon next to the window title in the bar.
  *
