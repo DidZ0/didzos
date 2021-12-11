@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
+#include <X11/XF86keysym.h>
 /* appearance */
 #if ROUNDED_CORNERS_PATCH
 static const unsigned int borderpx       = 0;   /* border pixel of windows */
@@ -812,7 +813,7 @@ static const char *dmenucmd[] = {
 	#endif // BAR_DMENUMATCHTOP_PATCH
 	NULL
 };
-static const char *termcmd[]  	= { "st", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *spotify[]  	= { "spotify",NULL};
 static const char *web[]  	= { "brave", NULL};
 static const char *lightup[]  	= { "light", "-A", "5", NULL};
@@ -1210,7 +1211,7 @@ static Key keys[] = {
 	{ 0,                            XF86XK_MonBrightnessDown, 				spawn, {.v = lightdown } },
 	{ 0,                       		XF86XK_AudioLowerVolume,  				spawn, {.v = downvol   } },
 	{ 0,                      		XF86XK_AudioMute, 		  				spawn, {.v = mutevol   } },
-	{ 0,                       		XF86XK_AudioRaiseVolume,  				spawn, {.v = upvol  
+	{ 0,                       		XF86XK_AudioRaiseVolume,  				spawn, {.v = upvol     } }, 
 	TAGKEYS(                        XK_1,                                  0)
 	TAGKEYS(                        XK_2,                                  1)
 	TAGKEYS(                        XK_3,                                  2)
@@ -1221,6 +1222,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                                  7)
 	TAGKEYS(                        XK_9,                                  8)
 };
+
 
 #if KEYMODES_PATCH
 static Key cmdkeys[] = {
@@ -1654,4 +1656,3 @@ static IPCCommand ipccommands[] = {
 	#endif // XRDB_PATCH
 };
 #endif // IPC_PATCH
-
