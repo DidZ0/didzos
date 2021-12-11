@@ -4,8 +4,6 @@ path=$(pwd)
 ##################
 #     HOME       #
 ##################
-#ln -sf $path/.zshrc $HOME/.zshrc
-
 ln -sf $path/.xinitrc $HOME/.xinitrc
 
 ##################
@@ -39,10 +37,6 @@ ln -sf $path/config/dmenu $HOME/.config/dmenu
 [ ! -d $HOME/.cache ] && mkdir $HOME/.cache
 ln -sf $path/cache/wal $HOME/.cache/wal
 
-##################
-#      ETC       #
-##################
-sudo ln -sf $path/etc/trackpad/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 ##################
 #     INSTALL    #
