@@ -16,4 +16,8 @@ sudo make -C $dwm_path/out clean install
 # TODO
 
 # INSTALL ST 
-# TODO
+rm -rf $st_path/out/*
+cp $st_path/flexipatch/patches.def.h $st_path/flexipatch/patches.h
+$path/tools/flexipatch-finalizer.sh -r -d $st_path/flexipatch -o $st_path/out
+rm $st_path/flexipatch/patches.h
+sudo make -C $st_path/out clean install
