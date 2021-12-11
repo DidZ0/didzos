@@ -11,8 +11,8 @@ ln -sf $path/.xinitrc $HOME/.xinitrc
 ##################
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-[ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
-ln -sf $path/config/nvim $HOME/.config/nvim
+# [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
+# ln -sf $path/config/nvim $HOME/.config/nvim
 
 [ -d $HOME/.config/dwm ] && rm -rf $HOME/.config/dwm
 ln -sf $path/config/dwm $HOME/.config/dwm
