@@ -60,5 +60,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-out
-save
+*.rej
+*.orig
