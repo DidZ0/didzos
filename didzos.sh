@@ -12,11 +12,11 @@ paru -S --needed python nitrogen neovim picom-git python-pywal
 [ -d $HOME/.config/resources ] && rm -rf $HOME/.config/resources
 [ ! -d $HOME/.cache ] && mkdir $HOME/.cache
 
-#LINK
+#.CONFIG
 ln -sf $path/.xinitrc $HOME/.xinitrc
+ln -sf $path/cache/wal $HOME/.cache/wal
 ln -sf $path/config/resources $HOME/.config/resources
 ln -sf $path/config/picom.conf $HOME/.config/picom.conf
-ln -sf $path/cache/wal $HOME/.cache/wal
 ln -sf $path/config/dwm $HOME/.config/dwm
 ln -sf $path/config/st $HOME/.config/st
 ln -sf $path/config/dmenu $HOME/.config/dmenu
