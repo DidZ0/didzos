@@ -14,7 +14,7 @@ export AWT_TOOLKIT=MToolkit
 wmname LG3D
 
 #APPS
-nm-applet &
+cmst &
 wal -R &
 picom --experimental-backends &
 
