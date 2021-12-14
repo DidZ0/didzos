@@ -18,16 +18,5 @@ nm-applet &
 wal -R &
 picom --experimental-backends &
 
-#STATUS_BAR 
-while true; do
-   xsetroot -name "$( date +"%F %R" )"
-   sleep 1m    # Update time every minute
-done 
-
-#START_LOOP
-while true; do
-    dwm 2> ~/.dwm.log
-done &
-
 #START
 exec dwm
