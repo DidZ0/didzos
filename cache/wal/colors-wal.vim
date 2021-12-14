@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/didzo/Pictures/wallpapers/gruvbox_cofee.png"
+let background = "#242120"
+let foreground = "#e2dbc9"
+let cursor     = "#e2dbc9"
+
+" Colors
+let color0  = "#242120"
+let color1  = "#FE8019"
+let color2  = "#C99B32"
+let color3  = "#F9BC2F"
+let color4  = "#998E75"
+let color5  = "#B3A78A"
+let color6  = "#CBBD9B"
+let color7  = "#e2dbc9"
+let color8  = "#9e998c"
+let color9  = "#FE8019"
+let color10 = "#C99B32"
+let color11 = "#F9BC2F"
+let color12 = "#998E75"
+let color13 = "#B3A78A"
+let color14 = "#CBBD9B"
+let color15 = "#e2dbc9"
